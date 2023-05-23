@@ -144,8 +144,8 @@ let scores = JSON.parse(localStorage.getItem('scores')) || {
             scores.Wins = scores.Wins + 1;
         }
         }
-        document.querySelector('.js-urpick').innerHTML = `<img class="move-icon " src=`${playerMove}-emoji.png` alt="">`;
-        document.querySelector('.js-compick').innerHTML = `<img class="move-icon " src=`${computerMove}-emoji.png` alt="">`;
+        document.querySelector('.js-urpick').innerHTML = `<img class="move-icon " src="${playerMove}-emoji.png" alt="">`;
+        document.querySelector('.js-compick').innerHTML = `<img class="move-icon " src="${computerMove}-emoji.png" alt="">`;
         document.querySelector('.js-result').innerText = result;
         document.querySelector('.js-win').innerText = scores.Wins;
         document.querySelector('.js-loss').innerText = scores.Losses;
