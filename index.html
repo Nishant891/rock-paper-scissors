@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <link rel="stylesheet" href="rock-paper-scissors.css">
+  <body>
+    <div>
+        <p class="title">Rock Paper Scissors</p>
+        <button class="move-btn js-rock-btn";>
+          <img class="move-icon" src="images/rock-emoji.png" alt=""></button>
+
+        <button class="move-btn js-paper-btn">
+          <img class="move-icon" src="images/paper-emoji.png" alt=""></button>
+
+        <button class="move-btn js-scissors-btn">
+          <img class="move-icon" src="images/scissors-emoji.png" alt=""></button>
+
+        <p style="font-size: 18px;">You picked :<span class="js-urpick"></span></p>
+
+        <p style="font-size: 18px;">Computer picked :<span class="js-compick"></span></p>
+
+        <p style="font-size: 18px;">Result :<span style='font-size: 18px;' class="js-result"></span></p>
+
+        <p>Wins :<span class="js-win"></span></p> <p>Losses : <span class="js-loss"></span></p> <p>Ties : <span class="js-tie"></span></p>
+
+        <div class="lower-btns">
+          <button class="js-reset-score"  style="padding: 10px 10px 10px 10px; font-size: 16px; outline: none; margin-right: 10px;">Reset Score</button>
+
+          <button class="js-auto-play" style="padding: 10px 10px 10px 10px; font-size: 16px; outline: none;">Auto Play</button>
+  
+        </div>
+
+        <div class="js-reset-selector is-not-toggled">
+          <p style="display:inline-block">Are you sure you want to reset score?</p>
+          <button class="js-select-yes">YES</button>
+          <button class="js-select-no">NO</button>
+        </div>
+
+    </div>
+        
+    <script src="rock-paper-scissors.js"></script>
+  </body>
+</html>
